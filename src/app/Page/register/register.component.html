@@ -1,0 +1,58 @@
+<main>
+  <div class="container">
+    <div class="left-section">
+      <h2>Create an Account</h2>
+      <p>Join our parcel management system today!</p>
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input
+        type="text"
+        id="userId"
+        placeholder="User ID (5-20 chars)"
+        minlength="5"
+        maxlength="20"
+        required
+      />
+      <select id="countryCode" required>
+        <option value="+91">+91 (India)</option>
+        <option value="+1">+1 (USA)</option>
+        <option value="+44">+44 (UK)</option>
+        <option value="+61">+61 (Australia)</option>
+        <option value="+81">+81 (Japan)</option>
+      </select>
+      <input
+        type="tel"
+        id="mobileNumber"
+        placeholder="Mobile Number"
+        required
+      />
+
+      <input
+        type="password"
+        id="password"
+        placeholder="Password (1 uppercase, 1 special)"
+        required
+      />
+      <input
+        type="password"
+        id="confirmPassword"
+        placeholder="Confirm Password"
+        required
+      />
+
+      <button class="register-btn" onclick="registerUser()">Register</button>
+      <button class="reset-btn" onclick="resetForm()">Reset</button>
+      <p id="registerMsg"></p>
+    </div>
+
+    <div class="right-section">
+      <a routerLink="/login"><button class="login-btn">Login</button></a>
+      <img
+        src="assets/images/registration.webp"
+        alt="Parcel Management Illustration"
+      />
+    </div>
+  </div>
+
+  <script src="register.js"></script>
+</main>
