@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+  /* overflow: hidden; */
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: #f9f9f9;
+}
+
+.left-section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.form-box {
+  width: 70%;
+  max-width: 400px;
+  text-align: left;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.create-account {
+  background-color: black;
+  color: white;
+}
+
+.google-signup {
+  background: white;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.google-signup img {
+  width: 20px;
+}
+
+.right-section {
+  width: 50%;
+  position: relative;
+  background: linear-gradient(to bottom right, #f1d9b4, #5c74e3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-section img {
+  width: 100%;
+  max-width: 100vw;
+}
+
+.login-btn {
+  width: 20%;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: black;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+}
